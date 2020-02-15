@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout tools:context="com.example.calchoras.MainActivity" android:background="@drawable/gradient" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:layout_height="150dp" android:layout_width="120dp" android:layout_centerHorizontal="true" android:layout_alignParentTop="true" app:srcCompat="@drawable/logo1" android:layout_marginTop="40dp" android:id="@+id/imageView"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Ficarei"
+        android:inputType="time"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="#000000"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="250dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Sairei"
+        android:inputType="time"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="400dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Chegarei"
+        android:inputType="time"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark" />
+
+
+
+
+
+    <LinearLayout android:layout_height="50dp" android:layout_width="wrap_content" android:id="@+id/linearLayout" android:layout_alignStart="@+id/imageView" android:layout_alignLeft="@+id/imageView" android:layout_alignParentBottom="true" android:orientation="horizontal">
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="100dp"
+        android:background="#848AAF"
+        android:onClick="calcular"
+        android:text="Calcular" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="40dp"
+        android:background="#848AAF"
+        android:onClick="resetar"
+        android:text="Resetar" />
+
+</RelativeLayout>
